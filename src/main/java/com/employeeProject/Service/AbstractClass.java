@@ -4,12 +4,12 @@ import com.employeeProject.payload.EmployeeDto;
 
 public abstract class AbstractClass {
 
-	int a;
-	int b; 
+	int d;
+	int e; 
 	public abstract void createEmp();
 	
 //	public void add() {
-//		int c=a+b;
+//		int c=d+e;
 //	}
 	
 //	public AbstractClass(int a,int b) {
