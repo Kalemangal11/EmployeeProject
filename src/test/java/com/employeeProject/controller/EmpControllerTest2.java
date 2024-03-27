@@ -91,9 +91,9 @@ class EmpControllerTest2 {
 	 @CsvFileSource(resources="/EmployeeDB TableFromDB.csv")
 	 public void testGetAllEmp(List<EmployeeDto> input,String expected) throws Exception {
 
-//		 List<EmployeeDto> asList = Arrays.asList(
-//	                new EmployeeDto(1, "John Doe", 30, "Developer"),
-//	                new EmployeeDto(2, "Jane Smith", 35, "Manager");
+		 List<EmployeeDto> asList = Arrays.asList(
+	                new EmployeeDto(1, "John Doe", 30, "Developer"),
+	                new EmployeeDto(2, "Jane Smith", 35, "Manager"));
 				 
 				 when(empService.getAllEmp()).thenReturn(input);
 	     
