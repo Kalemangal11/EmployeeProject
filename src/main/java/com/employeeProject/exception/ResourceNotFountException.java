@@ -8,13 +8,13 @@ import lombok.Setter;
 public class ResourceNotFountException extends RuntimeException {
 
 	String resourceName;
-	String fldName;
+	String fieldName;
 	Integer fieldValue;
 	
-	public ResourceNotFountException(String resourceName,String fldName,Integer fieldValue) {
-		super(String.format("%s not found with %s:%s", resourceName, fldName,fieldValue));
+	public ResourceNotFountException(String resourceName,String fieldName,Integer fieldValue) {
+		super(String.format("%s not found with %s:%s", resourceName, fieldName,fieldValue));
 		this.resourceName=resourceName;
-		this.fldName=fldName;
+		this.fieldName=fieldName;
 		this.fieldValue=fieldValue;
 	}
 }
